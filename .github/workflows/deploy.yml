@@ -35,6 +35,6 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: ./EMPLOYEEMANAGEMENT-REACT
-          file: ./EMPLOYEEMANAGEMENT-REACT/frontend.Dockerfile
+          file: ./EMPLOYEEMANAGEMENT-REACT/frontend.dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/docker-frontend2:latest
