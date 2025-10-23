@@ -22,7 +22,7 @@ const EmployeeManager = () => {
   const [loading, setLoading] = useState(false);
 
   // Use hardcoded URL temporarily
-  const baseUrl = `http://localhost:8085/employeeapi`;
+  const baseUrl =  `${import.meta.env.VITE_API_URL}/employeeapi`;
 
   useEffect(() => {
     fetchAllEmployees();
